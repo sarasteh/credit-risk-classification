@@ -11,10 +11,15 @@ In the first part, data are splitted into training and testing datasets. Next, w
 In the second part, we resample the date before training using the RandomOverSampler module. Then we do the same training and testing process to fit and evaluate the model.
 
 ## Results
->Model 1 :
-    - balanced accuracy scores
-    - Precision, and Recall
+#### Model 1 :
+- balanced accuracy score :  0.9520479254722232
+- Precision, and Recall
 
->Model 2 :
-    - balanced accuracy scores
-    - Precision, and Recall
+![Figure.2](images/Model_1.png)
+
+
+### Model 2 :
+- balanced accuracy scores :  0.9936781215845847
+- Precision, and Recall
+
+![Figure.3](images/Model_2.png)
