@@ -13,13 +13,23 @@ In the second part, we resample the date before training using the RandomOverSam
 ## Results
 #### Model 1 :
 - balanced accuracy score :  0.9520479254722232
-- Precision, and Recall
+- Precision, and Recall (Figure.2)
 
 ![Figure.2](images/Model_1.png)
 
 
 ### Model 2 :
 - balanced accuracy scores :  0.9936781215845847
-- Precision, and Recall
+- Precision, and Recall (Figure.3)
 
 ![Figure.3](images/Model_2.png)
+
+## Summary
+
+Our model should be able to classify *healthy loans* and *high risk loans*. Since the finding of risky loans are more important than the healthy ones, we are interested to the model with the higher accuracy on *high risk loans*.
+In the first model(Logistic Regression without resampling), Healthy Loan('0') prediction is very accurate. For the High Risk Loan('1'), although the training data is not balanced (Healthy Loan:18765, Risky Loan:619) the model's accuracy is good enough to predict if a loan is high risk (precision:0.85, recall:0.91, f1-score:0.88). 
+
+In the second model, we applied resampling before Logistic Regression. This model has a very good balanced accuracy score (0.9936781215845847). Compared to the first model, it has a better f1-score for the high risk loan which makes it more useful and reliable for our case. I recommend the second model, however I suggest  applying it to more balanced testing sets to come up with a more accurate evaluation.  
+
+
+
